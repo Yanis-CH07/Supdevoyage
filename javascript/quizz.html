@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+</head>
+<body>
+    <h2>Quelle est la couleur d'un cheval ?</h2>
+    <button id="reponsea">Rouge</button>
+    <button id="reponseb">Vert</button>
+    <button id="reponsec">Blanc</button>
+
+    <script>
+        const reponsea = document.getElementById('reponsea')
+        const reponseb = document.getElementById('reponseb')
+        const reponsec = document.getElementById('reponsec')
+
+        reponsea.addEventListener('click', () => {
+            reponsea.style.backgroundColor = 'red'
+            alert("Mauvaise reponse")
+        })
+        reponseb.addEventListener('click', () => {
+            reponseb.style.backgroundColor = 'red'
+            alert("Mauvaise reponse")
+        })
+        reponsec.addEventListener('click', () => {
+            reponsec.style.backgroundColor = 'green'
+            alert("Bonne reponse")
+        })
+
+    </script>
+</body>
+</html>

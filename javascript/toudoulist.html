@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toudoulist</title>
+</head>
+<body>
+    
+    <ol id="texts"></ol>
+    <input type="text" placeholder="Entrez votre tâche ici" id = "text">
+    <button id="tache">Ajouté une tâche</button>
+
+    <script>
+    const tache = document.getElementById('tache')
+    const texts = document.getElementById('texts')
+    tache.addEventListener('click', () => {
+        const text = document.getElementById('text')
+        const li = document.createElement('li')
+        li.textContent = text.value
+        texts.appendChild(li)
+    })
+
+    </script>
+
+
+</body>
+</html>

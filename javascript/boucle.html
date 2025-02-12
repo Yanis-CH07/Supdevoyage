@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle</title>
+</head>
+<body>
+    <article id="texts"></article>
+    <button id="generate">Générer</button>
+""
+    <script>
+        const generate = document.getElementById('generate')
+        const texts = document.getElementById('texts')
+      
+        function genererMonText() {
+        const p = document.createElement('p')
+        p.textContent = "Débat parallèle, tu l'a vue la nana !"
+        texts.appendChild(p)
+        }
+        
+        // boucle qui va se repeter 10 fois 
+        // for(depart;conditionfin;incrementation)
+    for(let i = 0; i < 10; i++) {
+        // creer dinamiquement une balise paragraphe
+        const p = document.createElement('p')
+        // mettre un texte 
+        p.textContent = "Débat parallèle, tu l'a vue la nana !"
+        // ajouter le paragraphe dans la boite article
+        texts.appendChild(p)
+    }
+
+    generate.addEventListener('click', () => {
+        genererMonText()
+    })
+
+
+    </script>
+</body>
+</html>

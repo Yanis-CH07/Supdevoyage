@@ -1,0 +1,270 @@
+
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-size: cover;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgb(234, 232, 212);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px; 
+}
+
+header img {
+    border-radius: 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Kanit", serif;
+}
+
+ul li  :hover {
+    background-color: rgb(255, 255, 255);
+    transition:  rotate(90deg);
+    transition: 0.3s all;
+    border-radius: 10px;
+}
+
+
+div.image-container {
+    display: flex;
+    justify-content: center; /* Centre les images */
+    gap: 20px; /* Espacement entre les images */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements par défaut */
+    background-image: url(couchersoleil-la-rochelle-photo-rudyenolenny-le-bozec-7-1024x1024.jpg);
+    border-radius: 10px; 
+}
+
+.clickable-image {
+    width: 600px; /* Ajuste selon tes besoins */
+    transition: transform 0.3s ease;
+}
+
+.clickable-image:hover {
+    transform: scale(1.1); /* Effet zoom au survol */
+}
+
+header h1 {
+    justify-content: center;
+    text-align: center;
+    font-family: "Kanit", serif;    
+}
+
+.animationtext {
+    opacity: 0; /* Commence avec une opacité de 0 (invisible) */
+    animation: fadeIn 2s ease-in-out forwards; /* Animation sur 2 secondes */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px); /* Déplace légèrement le texte vers le haut au début */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Position finale */
+    }
+}
+
+
+h4 {
+    font-size: 18px;
+    font-family: "Kanit", serif;
+}
+
+main {
+    display: flex;
+}
+
+main img {
+    padding: 10px;
+    justify-content: left;
+}
+
+main p {
+    font-size: 18px;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: "Kanit", serif;
+    padding: 10px;
+}
+
+main.deux img {
+    padding: 10px;
+    justify-content: left;
+}
+
+main.deux p {
+    font-size: 18px;
+    justify-content: right;
+    font-size: 18px;
+    font-family: "Kanit", serif;    
+}
+
+div.tete {
+    font-family: cursive;
+}
+
+div.presentation {
+    font-size: 24px;
+    color: #122941;
+    font-family: "Kanit", serif;
+}
+
+
+div.rond{
+    background-color: rgb(235, 229, 217);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+div.rond2 {
+    background-color: rgb(20, 176, 155);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+div.rond3 {
+    background-color: rgb(3,89,174);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+div.rond4 {
+    background-color: rgb(204, 137, 86);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+div.phototeque img {
+    border-radius: 50px;
+}
+
+.avis-client {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.avis {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.avis-texte {
+    font-size: 16px;
+    color: #333;
+}
+
+.avis-client2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.avis-croisiere {
+    font-size: 12px;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-style: italic;
+}
+
+.avis-client3 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.avis {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.avis-texte {
+    font-size: 16px;
+    color: #333;
+}
+
+.avis-client4 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.avis-croisiere {
+    font-size: 12px;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-style: italic;
+}
+
+footer {
+    display: flex;
+    background-color: RGB(212, 214, 234);
+    border-radius: 10px; 
+    justify-content: space-around;
+}
+
+footer ul {
+    background-color: RGB(212, 214, 234);
+}
+
+footer ul a{
+    color: rgb(0, 0, 0);
+    background-color: RGB(212, 214, 234);
+    text-decoration: none;
+}
+
+
+
+footer p {
+    color: rgb(167, 167, 167);
+}
+
+.back-to-top {
+    position: fixed; /* Fixe le bouton à l'écran */
+    bottom: 20px; /* Distance du bas */
+    right: 20px; /* Distance de la droite */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none; /* Enlève le soulignement */
+    border-radius: 5px;
+    font-family: "Kanit", serif;
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+

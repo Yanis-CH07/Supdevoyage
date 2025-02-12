@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛳️​🌊​ - Accueil - 👍​🏄‍♂️​</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Style général du popup */
+#popup {
+    display: none; /* Initialement caché */
+    position: fixed; /* Reste toujours en place sur l'écran */
+    top: 50%; /* Centré verticalement */
+    left: 50%; /* Centré horizontalement */
+    transform: translate(-50%, -50%); /* Pour que le popup soit parfaitement centré */
+    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce autour du popup */
+    width: 80%; /* Largeur de 80% de l'écran */
+    max-width: 500px; /* Largeur maximale de 500px */
+    z-index: 1000; /* Assure que le popup soit au-dessus des autres éléments */
+}
+
+/* Arrière-plan sombre derrière le popup */
+#popup:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur semi-transparente */
+    z-index: -1; /* Derrière le popup */
+}
+
+/* Style du bouton de fermeture */
+#popup button {
+    background-color: #007bff; /* Couleur bleue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px; /* Espace entre le champ email et le bouton */
+    transition: background-color 0.3s ease;
+}
+
+#popup button:hover {
+    background-color: #0056b3; /* Change la couleur en bleu foncé au survol */
+}
+
+/* Style pour le champ email */
+#popup input[type="email"] {
+    width: 100%; /* Remplir toute la largeur du popup */
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ajout de padding et centrage du texte */
+#popup p {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 10px 0;
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+button.newsletter-btn {
+    background-color:#007bff;
+    font-family: "Kanit", serif;
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    border-radius: 10px;
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="top"></a>
+
+    <header>
+    <img class="logo" width="100" src="logo.jpg" alt="logo">
+    <h1 class="animationtext">Infinity Sea</h1>
+    <ul class="nav">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="destination1.html">Tour du Monde par l'Ouest</a></li>
+        <li><a href="destination2.html">Tour du Monde par l'Est</a></li>
+        <li><a href="contact.html">Information et Contact</a></li>
+    </ul>
+    </header>
+
+    
+
+    
+    
+    <div class="image-container">
+        <a href="destination1.html">
+            <img width="500" src="5e8201c543f74c32451478c9a4f24fa28be188246fed1bca8e85eaff9d6dcbe9.png" alt="Croisière Ouest" class="clickable-image">
+        </a>
+        <a href="destination2.html">
+            <img width="690" src="797ca0af29e2b2ca79f9a0ce2b483ff0d0d662b6fdeac4d789653513b14e3035.png" alt="Croisière Est" class="clickable-image">
+        </a>
+    </div>
+    <hr>
+    <main>
+        <br>
+        <div class="rond">
+        <img width="100" src="pakebo.png" alt="">
+            <p>🔧 Des navires à la pointe de la technologie
+
+                Nos bateaux allient modernité et performance pour vous offrir un voyage en toute sérénité. Régulièrement entretenus et équipés des dernières technologies, ils garantissent une sécurité optimale et un confort exceptionnel, pour que chaque instant à bord soit un plaisir.</p>
+        </div>
+        <div class="rond2">
+        <img width="100" src="personnel.png" alt="">
+            <p>👨‍✈️ Un équipage expérimenté à votre service
+
+                Nos marins et personnels de bord sont sélectionnés pour leur expertise et leur sens du service. Formés aux standards les plus exigeants, ils sont dédiés à votre bien-être et à votre sécurité. Toujours à votre écoute, ils veillent à ce que votre croisière soit une expérience fluide, agréable et inoubliable.</p>
+        </div>
+    </main>
+
+    <main class="deux">
+    <div class="rond3">
+        <img width="100" src="destination.png" alt="">
+        <p>🛡️ Voyage en toute sérénité !
+            Nos itinéraires sont soigneusement étudiés pour garantir votre sécurité. Chaque escale est sélectionnée en fonction de sa stabilité, et nous collaborons avec les autorités locales pour assurer un voyage sans souci. Profitez de votre croisière en toute tranquillité ! ⛵✨</p>
+    </div>
+    <div class="rond4">
+        <img width="100" src="identité.png" alt="">
+        <p>📜 Voyage simplifié, sans tracas !
+
+            Nous facilitons toutes vos démarches administratives pour chaque escale. Grâce à nos partenariats, l'obtention des visas et formalités d’entrée se fait en toute simplicité. Profitez pleinement de votre voyage, nous nous occupons du reste ! 🌍✈️</p>
+    </div>
+    </main>
+    <div class="presentation">
+        <p>🛳️​ À bord d'Infinity Sea, l'ennui n'existe pas ! Nos navires offrent une multitude d'activités pour tous les goûts : piscines, spas, salles de sport, spectacles en soirée et restaurants gastronomiques. Des excursions captivantes aux animations à bord, chaque jour est une nouvelle aventure. Profitez du luxe, du confort et du divertissement tout au long de votre voyage ! ​⚓​</p>
+    </div>
+    <br>
+    <br>
+    <img width="600" src="https://static.vitra.com/media-resized/ORcDH7_-wD2q3x4wW9ejpEkg_HI_Nsxn4RWtJnFG-5Y/fill/750/274/ce/0/aHR0cHM6Ly9zdGF0aWMudml0cmEuY29tL21lZGlhL2Fzc2V0LzYwOTQzMjcvc3RvcmFnZS92X2Z1bGxibGVlZF8xNDQweC84NjQzMDUzMy5qcGc.jpg" alt="">
+    
+    <hr>
+    <div class="phototeque">
+    <h2>Phototèque :</h2>
+    <img width="480" src="https://media.routard.com/image/62/9/fb-lisbonne-2.1475629.jpg" alt="">
+    <img width="480" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5P9gm_vgl7J0JKYUUmbV2J0fMCLYV2Aw3YA&s" alt="">
+    <img width="480" src="https://www.partirou.com/australie/sydney/photos/australie-14-9593.jpg" alt="">
+    <img width="480" src="https://www.voyageequateur.com/cdn/ec-public/iles_galapagos.jpg" alt="">
+    <img width="480" src="https://photo.comptoir.fr/asset/guide/1435/595805-1260x630-ushuaia-archipel-de-la-terre-de-feu-argentine.jpg" alt="">
+    <img width="500" src="https://img.static-kl.com/images/media/EDD567B6-661E-481F-97ACD929AB125ABA" alt="">
+    <img src="" alt="">
+    </div>
+    <div class="avis-client">
+        <div class="avis">
+            <p class="avis-texte">"Une expérience inoubliable ! Les escales étaient magnifiques et l'équipage aux petits soins."</p>
+            <p class="avis-client2">- Jerôme C.</p>
+            <span class="avis-croisiere">Croisière Ouest</span>
+        </div>
+    
+        <div class="avis">
+            <p class="avis-texte">"Voyage incroyable ! La diversité des destinations et le confort du navire étaient parfaits."</p>
+            <p class="avis-client2">- Marc N.</p>
+            <span class="avis-croisiere">Croisière Est</span>
+        </div>
+    
+        <div class="avis">
+            <p class="avis-texte">"Un an autour du monde, c'était un rêve devenu réalité. Tout était bien organisé !"</p>
+            <p class="avis-client2">- Charlotte H.</p>
+            <span class="avis-croisiere">Croisière Ouest</span>
+        </div>
+    
+    </div>
+
+    <div class="avis-client3">
+        <div class="avis">
+            <p class="avis-texte">"Une croisière magnifiques, les temps de trajets en bateau sont assez convenable. Rien ne manque dans ce bateau pour ce divertir."</p>
+            <p class="avis-client4">- Dino L.</p>
+            <span class="avis-croisiere">Croisière Ouest</span>
+        </div>
+    
+        <div class="avis">
+            <p class="avis-texte">"Tout était parfait, du départ au Havre à l’arrivée après un an d’exploration. Les escales étaient bien choisies, avec assez de temps pour découvrir chaque lieu."</p>
+            <p class="avis-client4">- Lorenzo C.</p>
+            <span class="avis-croisiere">Croisière Est</span>
+        </div>
+    
+        <div class="avis">
+            <p class="avis-texte">"Athènes et Rome dans le même voyage ? Juste incroyable ! J’ai adoré voir des sites historiques tout en profitant du luxe à bord."</p>
+            <p class="avis-client4">- Maja I.</p>
+            <span class="avis-croisiere">Croisière Ouest</span>
+        </div>
+    
+    </div>
+    <hr>
+    <br>
+    <button class="newsletter-btn" onclick="showPopup()">S'inscrire à la newsletter</button>
+    <div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); padding:20px; background-color:white; border:1px solid #ccc;">
+      <p>Inscris-toi à notre newsletter!</p>
+      <input type="email" placeholder="Ton email">
+      <button onclick="closePopup()">Envoyer</button>
+      <button onclick="closePopup()">Fermer</button>
+    </div>
+
+    <script>
+      function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+      }
+    
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+    </script>
+    <br>
+    <br>
+    <footer>
+        <br>
+       <ul><a href="">Condition générale de vente</a></ul>
+       <ul><a href="">Vos informations personnelles</a></ul>
+       <ul><a href="">Cookies</a></ul>
+       <a href="#top" class="back-to-top">⬆ Retour en haut</a>
+       <p>&copy; 2000-2025 Infinity Sea</p>
+    </footer>
+
+
+
+    </body>
+</html>

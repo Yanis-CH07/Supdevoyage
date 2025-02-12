@@ -1,0 +1,117 @@
+
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    background-color: rgb(234, 232, 212);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px; 
+}
+header img {
+    border-radius: 20px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin: 20px;
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Kanit", serif;  
+}
+
+ul li  :hover {
+    background-color: rgb(255, 255, 255);
+    transition:  rotate(90deg);
+    transition: 0.3s all;
+    border-radius: 10px;
+}
+
+header h1 {
+    justify-content: center;
+    text-align: center;
+    font-family: "Kanit", serif;    
+}
+
+.animationtext {
+    opacity: 0; /* Commence avec une opacité de 0 (invisible) */
+    animation: fadeIn 2s ease-in-out forwards; /* Animation sur 2 secondes */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px); /* Déplace légèrement le texte vers le haut au début */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Position finale */
+    }
+}
+
+main {
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: "Kanit", serif;
+}
+
+form {
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+main {
+    background-color: transparent
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: RGB(212, 214, 234);
+    border-radius: 20px;
+}
+footer ul {
+    display: flex;
+    justify-content: left;
+    background-color: RGB(212, 214, 234);
+}
+footer ul a{
+    display: flex;
+    justify-content: space-around;
+    background-color: RGB(212, 214, 234);
+    text-decoration: none;
+}
+footer p {
+    color: rgb(167, 167, 167);
+    justify-content: right;
+}
+.back-to-top {
+    position: fixed; /* Fixe le bouton à l'écran */
+    bottom: 20px; /* Distance du bas */
+    right: 20px; /* Distance de la droite */
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none; /* Enlève le soulignement */
+    border-radius: 5px;
+    font-family: "Kanit", serif
+}
+
+.back-to-top:hover {
+    background-color: #0056b3;
+}
+
+

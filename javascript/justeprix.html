@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Juste Prix</title>
+</head>
+<body>
+    <h2>Jeu du juste prix !</h2>
+    <input type="number" id="nombre">
+    <button id="submit">Envoyer</button>
+    <p id="message"></p>
+    <p id="nbessais">10 essais restants</p>
+
+
+    <script>
+        const nombrehasard = Math.floor(Math.random() * 100) + 1    
+        const submit = document.getElementById('submit')
+        const message = document.getElementById('message')
+        const nbessais = document.getElementById('nbessais')
+        let essais = 10
+
+        submit.addEventListener('click', () => {
+            // recuperer le champ "nombre"
+            const nombre = document.getElementById('nombre').value 
+
+            
+
+            // verifier si c'est gagné 
+            if (nombre == nombrehasard) {
+                message.textContent = "Vous avez trouvé le nombre !"
+            } else if (nombrehasard > nombre) {
+                message.textContent ="C'est plus !"
+            }  else {
+                    message.textContent = "C'est moins !"
+            }
+
+            // mettre a jour le nombre d'essais 
+            essais -- 
+            nbessais.textContent = essais.toString() + " essais restants"
+
+            // verifier si il lui reste 0 essais 
+            if (essais == 0) {
+                submit.disabled = true
+            }
+
+        })
+    </script>
+</body>
+</html>
